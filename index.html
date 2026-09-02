@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://coffee.lv99th.com/"><meta property="og:image" content="https://coffee.lv99th.com/assets/images/lv99-hero.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/menu.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"LV99coffee","url":"https://coffee.lv99th.com/","description":"ร้านกาแฟริมถนนเจริญกรุง ใกล้ MRT สามยอด","priceRange":"฿1–200","servesCuisine":["Coffee","Cafe","Bakery","Dessert"],"hasMap":"https://maps.app.goo.gl/upwLs7Lys3qoL3d98","address":{"@type":"PostalAddress","streetAddress":"ปากซอยเจริญกรุง 9 ถนนเจริญกรุง","addressSubdistrict":"บ้านบาตร","addressDistrict":"ป้อมปราบศัตรูพ่าย","addressLocality":"กรุงเทพมหานคร","postalCode":"10100","addressCountry":"TH"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:30","closes":"16:30"},"sameAs":["https://www.facebook.com/lv99coffee"]}</script>
 </head>
 <body>
@@ -33,9 +33,11 @@
       <dl class="facts reveal"><div><dt>140 m</dt><dd>จาก MRT สามยอด</dd></div><div><dt>6 days</dt><dd>เปิดจันทร์–เสาร์</dd></div><div><dt>Wi‑Fi</dt><dd>สำหรับลูกค้าในร้าน</dd></div></dl>
     </section>
     <section class="menu-section section" id="menu">
-      <header class="section-heading reveal"><div><p class="eyebrow">Made for every mood</p><h2>วันนี้อยากดื่ม<br><span>อะไรดี?</span></h2></div><p>ตั้งแต่กาแฟแก้วโปรด ไปจนถึงชา มัทฉะ โกโก้ และเครื่องดื่มสดชื่น เลือกหมวดที่ใช่แล้วมาดูกันที่หน้าร้าน</p></header>
-      <div class="menu-grid reveal"><article class="menu-card featured"><span>01</span><h3>Coffee</h3><p>กาแฟร้อน เย็น และเมนูแบล็กคอฟฟี่</p></article><article class="menu-card"><span>02</span><h3>Matcha & Tea</h3><p>ชาและมัทฉะสำหรับวันสบาย ๆ</p></article><article class="menu-card"><span>03</span><h3>Cocoa & Milk</h3><p>เข้มข้น นุ่มนวล และดื่มง่าย</p></article><article class="menu-card"><span>04</span><h3>Fresh & Soda</h3><p>เครื่องดื่มเย็นซ่าสำหรับเติมความสดชื่น</p></article></div>
-      <p class="menu-note">รายการและราคาฉบับเต็มกำลังตรวจสอบจากป้ายเมนูหน้าร้าน</p>
+      <header class="section-heading reveal"><div><p class="eyebrow">Made for every mood</p><h2>วันนี้อยากดื่ม<br><span>อะไรดี?</span></h2></div><p>เมนูและราคาจากป้ายจริงของร้าน เลือกดูตามหมวดได้สะดวกทั้งบนมือถือและคอมพิวเตอร์</p></header>
+      <div class="menu-tools reveal" aria-label="เลือกหมวดเมนู"><button class="menu-filter active" type="button" data-filter="all">ทั้งหมด</button><button class="menu-filter" type="button" data-filter="coffee">กาแฟ</button><button class="menu-filter" type="button" data-filter="matcha">มัทฉะ</button><button class="menu-filter" type="button" data-filter="tea">ชา</button><button class="menu-filter" type="button" data-filter="other">อื่น ๆ</button></div>
+      <div class="menu-list reveal" id="menu-list" aria-live="polite"></div>
+      <details class="menu-board reveal"><summary>ดูภาพป้ายเมนูจริงของร้าน <span>＋</span></summary><div class="menu-board-frame"><img src="assets/images/lv99-menu-board.webp" alt="ป้ายเมนูจริงของร้าน LV99coffee แสดงรายการเครื่องดื่มและราคา" width="2056" height="1153" loading="lazy"></div></details>
+      <p class="menu-note">ราคาหน่วยเป็นบาท · เครื่องหมาย — หมายถึงไม่มีตัวเลือกนั้นตามป้ายเมนู</p>
     </section>
     <section class="ritual section"><figure class="ritual-media reveal"><img src="assets/images/lv99-latte-croffle.webp" alt="ลาเต้และครอฟเฟิลเสิร์ฟบนโต๊ะไม้" width="1120" height="1400" loading="lazy"></figure><div class="ritual-copy reveal"><p class="eyebrow">Your everyday ritual</p><blockquote>“กาแฟดี ๆ ไม่ต้องเร่งรีบ แค่มีเวลาให้ตัวเองสักแก้ว”</blockquote><p>เริ่มเช้าด้วยกาแฟ หรือพักบ่ายกับเครื่องดื่มและครอฟเฟิล ในบรรยากาศเรียบง่ายที่เป็นกันเอง</p><a class="arrow-link" href="https://www.facebook.com/lv99coffee" target="_blank" rel="noopener">ติดตามเมนูและข่าวสารบน Facebook <span>↗</span></a></div></section>
     <section class="review section"><p class="eyebrow reveal">Customer voice</p><div class="review-grid reveal"><div class="quote-mark">“</div><figure><blockquote lang="en">It was so nice to sit, relax and use the free Wi‑Fi. The dishes were meticulously prepared in an immaculate establishment.</blockquote><figcaption><strong>John “Juanito Hayburg” Eyberg</strong><span>★★★★★ · Google Maps</span></figcaption></figure></div></section>
