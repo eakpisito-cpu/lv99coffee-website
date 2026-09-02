@@ -22,8 +22,9 @@ Modern editorial single-page website on branch `redesign-v1`. Production target:
 
 ## Content constraints
 
-- Do not invent menu names or prices.
-- The menu cards show verified categories only; add the full menu after receiving a complete readable menu-board image.
+- Do not invent menu names or prices. The visible menu is transcribed from `assets/images/lv99-menu-board.webp`.
+- Menu data lives in the `menuData` array in `js/main.js`; edit it there rather than duplicating menu HTML.
+- The far-right panel of the source photograph is cropped and is intentionally excluded.
 - Current photography is AI-generated brand atmosphere, not documentary imagery of the physical shop. Replace it with approved real photos when available.
 - Do not change business information without owner confirmation.
 
