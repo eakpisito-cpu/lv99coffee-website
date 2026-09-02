@@ -6,7 +6,7 @@
 
 - `index.html` — เนื้อหา, SEO และ Structured Data
 - `css/styles.css` — Design system และ Responsive layout
-- `js/main.js` — Mobile navigation, sticky header และ reveal animation
+- `js/main.js` — ข้อมูลเมนูจริง, ตัวกรองหมวด, Mobile navigation และ reveal animation
 - `assets/images/` — ภาพเว็บไซต์ที่บีบอัดเป็น WebP
 - `robots.txt` / `sitemap.xml` — ข้อมูลสำหรับ Search Engine
 
@@ -17,6 +17,6 @@
 ## ข้อกำหนดสำคัญ
 
 - ห้ามเดาชื่อเมนูหรือราคา
-- เมนูฉบับเต็มจะเพิ่มเมื่อมีภาพป้ายที่อ่านได้ครบ
+- เมนูและราคาที่อ่านได้ชัดถูกถอดจากป้ายจริงแล้ว โดยไม่ใช้ส่วนขวาของภาพที่ถูกตัด
 - ภาพปัจจุบันเป็นภาพบรรยากาศที่สร้างขึ้นสำหรับงานออกแบบ และควรเปลี่ยนเป็นภาพร้านจริงเมื่อพร้อม
 - Production URL คือ `https://coffee.lv99th.com/`
