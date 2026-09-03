@@ -7,6 +7,7 @@ const menuData=[
 {title:'Milk',label:'นม',group:'other',items:[['Fresh Milk','นมสด','ร้อน 50 · เย็น 60'],['Pink Milk','นมชมพู','เย็น 65'],['Vanilla Milk','นมวานิลลา','เย็น 65'],['Caramel Milk','นมคาราเมล','เย็น 65'],['Mint Milk','นมมิ้นท์','เย็น 70'],['Strawberry Milk','นมสตรอว์เบอร์รี่','เย็น 70']]},
 {title:'Italian Soda',label:'อิตาเลียนโซดา',group:'other',items:[['Blue Carucao Soda','บลูฮาวาย','เย็น 65'],['Kiwi','กีวี','เย็น 65'],['Lychee','ลิ้นจี่','เย็น 65'],['Strawberry','สตรอว์เบอร์รี่','เย็น 65'],['Peach','พีช','เย็น 65'],['Yuzu','ยูซุ','เย็น 65'],['Honey Yuzu','ยูซุน้ำผึ้ง','เย็น 75'],['Strawberry Yuzu','ยูซุสตรอว์เบอร์รี่','เย็น 75']]},
 {title:'Coconut',label:'น้ำมะพร้าว',group:'other',items:[['Coconut Milk Shake','น้ำมะพร้าวปั่นนมสด','เย็น 80'],['Coconut Frappe','น้ำมะพร้าวปั่น (No milk)','เย็น 75']]},
+{title:'Croffle',label:'รออบ 10–15 นาที',group:'food',items:[['Plain Croffle','ไม่มีน้ำตาล','65'],['Sugar Caramel','เคลือบน้ำตาลคาราเมล','70'],['Dark Chocolate Croffle','เลือกซอสราดอื่นได้','75'],['Ovaltine + Condensed Milk','โอวัลตินราดนมข้น','79'],['Almond Croffle','ครอฟเฟิลอัลมอนด์','90'],['Banana Croffle','ครอฟเฟิลกล้วย','90'],['Oreo Croffle','ครอฟเฟิลโอรีโอ้','90']]},
 {title:'Topping',label:'ท็อปปิ้ง',group:'other',items:[['Frappe','ปั่น','+25'],['Oat Milk','นมโอ๊ต','+20'],['Add Shot','เพิ่มช็อต','+25'],['A glass of ice','น้ำแข็งเปล่า 1 แก้ว','+7']]}
 ];
 const menuList=document.querySelector('#menu-list');
