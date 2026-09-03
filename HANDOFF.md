@@ -25,7 +25,8 @@ Modern editorial single-page website on branch `redesign-v1`. Production target:
 - Do not invent menu names or prices. The visible menu is transcribed from `assets/images/lv99-menu-board.webp`.
 - Menu data lives in the `menuData` array in `js/main.js`; edit it there rather than duplicating menu HTML.
 - The far-right panel of the source photograph is cropped and is intentionally excluded.
-- Current photography is AI-generated brand atmosphere, not documentary imagery of the physical shop. Replace it with approved real photos when available.
+- Current hero and featured food photography are AI-generated brand imagery. The Strawberry Matcha Latte + Banana Croffle feature is based on the owner's real menu references; source menu boards remain available below the menu.
+- Seven clearly readable, currently available Croffle items are included. Items covered by “Out of stock” labels or unreadable in the source are intentionally excluded.
 - Do not change business information without owner confirmation.
 
 ## Deployment
