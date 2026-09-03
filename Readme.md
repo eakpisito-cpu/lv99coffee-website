@@ -7,7 +7,7 @@
 - `index.html` — เนื้อหา, SEO และ Structured Data
 - `css/styles.css` — Design system และ Responsive layout
 - `js/main.js` — ข้อมูลเมนูจริง, ตัวกรองหมวด, Mobile navigation และ reveal animation
-- `assets/images/` — ภาพเว็บไซต์ที่บีบอัดเป็น WebP
+- `assets/images/` — ภาพเว็บไซต์และป้ายเมนูจริงที่บีบอัดเป็น WebP
 - `robots.txt` / `sitemap.xml` — ข้อมูลสำหรับ Search Engine
 
 ## การเผยแพร่
