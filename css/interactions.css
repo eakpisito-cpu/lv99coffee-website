@@ -39,6 +39,9 @@
 .story-timeline strong { display: block; margin-bottom: .55rem; font-size: .88rem; }
 .story-timeline span { display: block; color: #6b6057; font-size: .76rem; line-height: 1.65; }
 
+.ritual-media figcaption { margin-top: .75rem; color: #675a50; font-size: .7rem; }
+.ritual-copy .ritual-en { margin-top: 1.25rem; color: #675a50; font-size: .8rem; line-height: 1.7; }
+
 .menu-board-open {
   position: relative;
   display: block;
