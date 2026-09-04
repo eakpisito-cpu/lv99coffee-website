@@ -42,6 +42,25 @@
 .ritual-media figcaption { margin-top: .75rem; color: #675a50; font-size: .7rem; }
 .ritual-copy .ritual-en { margin-top: 1.25rem; color: #675a50; font-size: .8rem; line-height: 1.7; }
 
+.services { background: var(--cream); }
+.services-heading { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(280px,.65fr); gap: 1rem 8vw; align-items: end; }
+.services-heading .eyebrow { grid-column: 1 / -1; }
+.services-heading h2 { margin: 0; font: 400 clamp(3rem,6vw,6rem)/.95 var(--serif); letter-spacing: -.04em; }
+.services-heading h2 span { display: block; color: #9c643f; }
+.services-heading > p:last-child { margin: 0; color: #675a50; }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; margin-top: 4rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.services-grid article { position: relative; padding: clamp(2rem,4vw,4rem); border-right: 1px solid var(--line); }
+.services-grid article:first-child { padding-left: 0; }
+.services-grid article:last-child { padding-right: 0; border-right: 0; }
+.service-number { position: absolute; top: 1rem; right: 1.5rem; color: rgba(23,19,15,.09); font: 400 clamp(5rem,10vw,10rem)/1 var(--serif); }
+.service-partner { position: relative; margin: 0 0 2rem; color: #9c643f; font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.services-grid h3 { position: relative; max-width: 520px; margin: 0 0 1.25rem; font: 400 clamp(2rem,3.5vw,3.5rem)/1.05 var(--serif); }
+.services-grid article > p:not(.service-partner) { position: relative; max-width: 610px; color: #5f554c; }
+.services-grid .service-en { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: .78rem; line-height: 1.7; }
+.services-grid .service-en strong { display: block; color: var(--ink); }
+.services-grid .arrow-link { position: relative; display: inline-flex; gap: 2rem; margin-top: 1rem; font-size: .82rem; }
+.services-note { margin: 1.25rem 0 0; color: #766b62; font-size: .72rem; }
+
 .menu-board-open {
   position: relative;
   display: block;
@@ -103,6 +122,8 @@
   .story-timeline li:nth-child(3) { border-top: 1px solid var(--line); }
   .story-timeline li:nth-child(4) { border-top: 1px solid var(--line); }
   .route { grid-template-columns: 1fr; }
+  .services-heading { grid-template-columns: 1fr; }
+  .services-heading > p:last-child { margin-top: 1rem; }
 }
 
 @media (max-width: 600px) {
@@ -112,6 +133,10 @@
   .menu-board-open { min-width: 720px; }
   .menu-dialog { width: 100vw; max-height: 100vh; border: 0; }
   .route-distance-card { padding: 2rem 1.25rem; }
+  .services-grid { grid-template-columns: 1fr; }
+  .services-grid article,.services-grid article:first-child,.services-grid article:last-child { padding: 2rem 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .services-grid article:last-child { border-bottom: 0; }
+  .service-number { right: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
