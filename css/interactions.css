@@ -43,6 +43,8 @@
 .ritual-copy .ritual-en { margin-top: 1.25rem; color: #675a50; font-size: .8rem; line-height: 1.7; }
 
 .language-link { min-width: 2.4rem; padding: .35rem .55rem; border: 1px solid rgba(255,255,255,.35); text-align: center; font-weight: 700; letter-spacing: .08em; }
+.menu-item strong a { border-bottom: 1px solid rgba(255,255,255,.35); }
+.menu-item strong a:hover { color: #e6a474; border-color: #e6a474; }
 .fresh-coconut-note { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin: -1rem 0 3rem; padding: clamp(1.4rem,3vw,2.25rem); border: 1px solid rgba(255,255,255,.2); background: linear-gradient(110deg,rgba(207,129,80,.18),transparent 58%); }
 .fresh-coconut-note .eyebrow { margin-bottom: .6rem; color: #e5a06f; }
 .fresh-coconut-note h3 { margin: 0; font: 400 clamp(1.9rem,3.5vw,3.2rem)/1 var(--serif); }
