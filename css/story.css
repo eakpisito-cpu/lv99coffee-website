@@ -11,6 +11,14 @@
   color: var(--ink);
 }
 
+.story-full-link {
+  display: inline-flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: .84rem;
+  font-weight: 600;
+}
+
 .standards {
   background: #e8dccb;
 }
