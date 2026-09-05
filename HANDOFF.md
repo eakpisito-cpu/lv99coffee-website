@@ -1,144 +1,53 @@
-# LV99coffee Website Handoff
+# LV99coffee — Project Handoff
 
-## ภาพรวมโปรเจกต์
+## Current state
 
-เว็บไซต์หน้าเดียวของร้าน LV99coffee พัฒนาด้วย HTML, CSS และ JavaScript แบบไม่ใช้ Framework สามารถเปิดไฟล์ `index.html` ในเบราว์เซอร์ได้โดยตรง
+Modern editorial single-page website on branch `redesign-v1`. Production target: `https://coffee.lv99th.com/` on RUK-COM DirectAdmin.
 
-ภาษาหลักของเว็บไซต์คือภาษาไทย และใช้ภาษาอังกฤษบางส่วนในชื่อเมนูและองค์ประกอบตกแต่ง
+## Confirmed business data
 
-## เป้าหมายของเว็บไซต์
+- Founded: 2023, in the former shipping shop operated by the owner's wife
+- Name origin: LV99 means “Level 99”, the highest/end-game level and a commitment to doing each detail well
+- Coffee: full-flavored extraction using Pacamara Coffee Roasters beans; the exact recipe and dose are confidential
+- Ice: made on-site using the shop's ice machine and filtered water; filters are replaced regularly
+- Brand principle: the owner and family drink at the shop regularly, so customer drinks follow the same standard
+- Address: ปากซอยเจริญกรุง 9 ถนนเจริญกรุง แขวงบ้านบาตร เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
+- Near MRT Sam Yot: approximately 140 m
+- Hours: Monday–Saturday 07:30–16:30; closed Sunday
+- Maps: `https://maps.app.goo.gl/upwLs7Lys3qoL3d98`
+- Facebook: `https://www.facebook.com/lv99coffee`
+- LINE: `@480xoyrj` (`https://line.me/R/ti/p/@480xoyrj`)
+- Phone: `088-639-4666`
+- Grab delivery: `https://r.grab.com/g/6-20260905_121633_26bfd17a1ec94d88992dd4b845d9ee0a_MEXMPS-3-C35JVJKAL63HGJ`
+- LINE MAN delivery: `https://lin.ee/ONmKM3F?openExternalBrowser=1`
 
-- แนะนำร้าน LV99coffee
-- แสดงที่ตั้งและเวลาเปิดบริการ
-- แสดงเมนูเครื่องดื่มพร้อมราคา
-- แสดงรีวิวลูกค้าแบบข้อความ ไม่มีภาพรีวิว
-- เชื่อมต่อ Google Maps และ Facebook
-- รองรับโทรศัพท์มือถือและคอมพิวเตอร์
-- ปรับแต่ง SEO และ Structured Data
+## Design direction
 
-## ข้อมูลร้าน
+- Modern Bangkok Old Town editorial style
+- Espresso, charcoal, caramel and warm ivory palette
+- DM Serif Display with Noto Sans Thai
+- Image-led full-screen hero and responsive mobile layout
+- Reduced-motion support, keyboard focus styles and semantic navigation
+- Animated story timeline and illustrative MRT Sam Yot route use CSS only and honor `prefers-reduced-motion`
+- Real menu boards open in a native HTML `<dialog>` with keyboard and backdrop-close support
 
-- ชื่อร้าน: LV99coffee
-- ประเภทร้าน: ร้านกาแฟและเครื่องดื่ม
-- ที่อยู่: ปากซอยเจริญกรุง 9 ถนนเจริญกรุง แขวงบ้านบาตร เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
-- จุดสังเกต: ห่างจาก MRT สามยอดประมาณ 140 เมตร
-- เวลาเปิดบริการ: วันจันทร์–เสาร์ เวลา 07:30–16:30 น.
-- วันหยุด: วันอาทิตย์
-- ช่วงราคา: ประมาณ 1–200 บาท
-- Google Maps: https://maps.app.goo.gl/upwLs7Lys3qoL3d98
-- Facebook: https://www.facebook.com/lv99coffee
+## Content constraints
 
-## ไฟล์สำคัญ
+- Do not invent menu names or prices. The visible menu is transcribed from `assets/images/lv99-menu-board.webp`.
+- Menu data lives in the `menuData` array in `js/main.js`; edit it there rather than duplicating menu HTML.
+- The far-right panel of the source photograph is cropped and is intentionally excluded.
+- Current hero and featured food photography are AI-generated brand imagery. The Strawberry Matcha Latte + Banana Croffle feature is based on the owner's real menu references; source menu boards remain available below the menu.
+- Seven clearly readable, currently available Croffle items are included. Items covered by “Out of stock” labels or unreadable in the source are intentionally excluded.
+- Do not change business information without owner confirmation.
 
-- `index.html`: เว็บไซต์ทั้งหมด
-- `assets/menu-board.jpg`: ภาพป้ายเมนูสำหรับตรวจชื่อและราคา
+## Deployment
 
-## เทคโนโลยี
+Upload the complete web payload to `/domains/coffee.lv99th.com/public_html/`. SSL has already been issued. Never store hosting or FTP passwords in this repository.
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Google Fonts:
-  - DM Serif Display
-  - Noto Sans Thai
-- Schema.org JSON-LD
-- ไม่มีระบบ Build
-- ไม่มี Package Manager
-- ไม่มีฐานข้อมูล
-- ไม่มี Framework
+## Next work
 
-## รูปแบบเว็บไซต์
-
-- โทนสีครีม น้ำตาล กาแฟ คาราเมล และสีดำ
-- มี Hero section พร้อมภาพแก้วกาแฟที่สร้างด้วย CSS
-- มี Animation เมื่อเลื่อนหน้าจอ
-- มีเมนูมือถือ
-- รองรับ prefers-reduced-motion
-- เมนูเครื่องดื่มแสดงเป็นการ์ดแยกหมวดหมู่
-- ใช้กราฟิก CSS และ Emoji แทนรูปสินค้าในขณะนี้
-
-## หมวดหมู่เมนูที่เพิ่มแล้ว
-
-1. Coffee
-2. Mixed Black Coffee
-3. Coconut
-4. Cocoa
-5. Milk
-6. Tea
-7. Italian Soda
-8. Matcha
-9. Topping
-
-## คำสั่งสำคัญจากเจ้าของร้าน
-
-- ยังไม่ต้องเพิ่มเมนูจากป้ายด้านขวาของภาพ เพราะภาพถูกตัดและข้อมูลไม่ครบ
-- ห้ามเดาชื่อเมนูหรือราคาที่มองไม่ชัด
-- ถ้าจะเพิ่มเมนูใหม่ ต้องขอภาพป้ายที่เห็นชื่อและราคาเต็มก่อน
-- รีวิวต้องใช้ข้อความและดาวเท่านั้น ไม่ต้องใส่รูปภาพ
-- ควรรักษารูปแบบ Responsive และ SEO เดิมไว้
-- อย่าเปลี่ยนข้อมูลร้านโดยไม่ได้รับการยืนยัน
-- ราคาทั้งหมดใช้หน่วยบาท
-- บางเมนูมีเฉพาะร้อนหรือเย็น ต้องไม่เติมราคาเอง
-
-## งานที่ควรตรวจสอบก่อนเผยแพร่
-
-- ตรวจว่ารายการเมนูจาก JavaScript แสดงครบ
-- ตรวจชื่อเมนูภาษาไทยและภาษาอังกฤษกับ `assets/menu-board.jpg`
-- ตรวจราคาทุกเมนูกับป้ายหน้าร้าน
-- ตรวจลิงก์ Google Maps และ Facebook
-- ตรวจเมนูนำทางไปยัง `#menu`
-- ทดสอบบนหน้าจอมือถือ
-- ทดสอบบน Chrome, Safari และ Edge
-- ตรวจว่าไม่มี JavaScript Error ใน Console
-- เปลี่ยน Canonical URL หากโดเมนจริงไม่ใช่ `lv99coffee.com`
-- เพิ่มเบอร์โทรศัพท์เมื่อเจ้าของร้านให้ข้อมูล
-- เพิ่มพิกัด Latitude และ Longitude เมื่อได้รับการยืนยัน
-- ขออนุญาตเจ้าของรีวิวก่อนใช้ชื่อและข้อความเชิงธุรกิจ
-
-## ข้อควรระวังเกี่ยวกับโค้ด
-
-หน้าเมนูถูกสร้างจาก Array ชื่อ `lv99Menu` ใน JavaScript หากต้องแก้เมนู ให้แก้ข้อมูลใน Array แทนการเขียน HTML รายการเครื่องดื่มซ้ำ
-
-รูปแบบข้อมูลเมนู:
-
-```javascript
-{
-  name: "ชื่อภาษาอังกฤษ",
-  thai: "ชื่อภาษาไทย",
-  hot: 60,
-  iced: 65
-}
-```
-
-หากไม่มีแบบร้อนหรือเย็น ให้ละ Property นั้นออก ห้ามใส่เลข 0
-
-ตัวอย่างเมนูที่มีเฉพาะแบบเย็น:
-
-```javascript
-{
-  name: "Thai Espresso",
-  thai: "เอสเพรสโซเย็น",
-  iced: 75
-}
-```
-
-## งานพัฒนาต่อที่แนะนำ
-
-1. รวมและตรวจความสมบูรณ์ของ `index.html`
-2. ปรับไอคอน Emoji เป็น SVG ที่มีสไตล์เดียวกัน
-3. เพิ่มตัวกรองหมวดหมู่เมนู
-4. เพิ่มช่องค้นหาเครื่องดื่ม
-5. เพิ่มปุ่มกลับขึ้นด้านบน
-6. เพิ่มสถานะเปิดหรือปิดร้านตามวันและเวลา
-7. ปรับ Accessibility ของเมนูมือถือ
-8. ลดขนาด CSS และ JavaScript ก่อนนำขึ้น Production
-9. เพิ่ม Open Graph Image เมื่อมีภาพร้านที่ได้รับอนุญาต
-10. เพิ่มข้อมูลเมนูป้ายด้านขวาเมื่อเจ้าของร้านส่งภาพเต็มมาแล้วเท่านั้น
-
-## คำสั่งสำหรับ AI ที่รับช่วงต่อ
-
-กรุณาอ่านไฟล์นี้และตรวจ `index.html` ทั้งหมดก่อนแก้ไข รักษารูปแบบเดิมและแก้เฉพาะสิ่งที่เจ้าของร้านร้องขอ
-
-ห้ามเพิ่มข้อมูลที่ไม่มีหลักฐาน ห้ามเดาราคา และยังไม่ต้องนำข้อมูลจากป้ายเมนูด้านขวาที่มองเห็นไม่ครบมาใช้
-
-เมื่อแก้ไขเสร็จ ให้ส่งโค้ดแบบไฟล์เต็มหรือระบุอย่างชัดเจนว่าต้องแทนที่ส่วนใด พร้อมตรวจสอบ HTML, CSS และ JavaScript ว่าไม่มีข้อผิดพลาด
+1. Owner reviews the redesign.
+2. Replace generated imagery with real shop photography when supplied.
+3. Verify permission to display the customer review.
+4. Add the full verified menu and prices.
+5. Deploy after approval and test the live HTTPS URL.

@@ -1,22 +1,23 @@
 # LV99coffee Website
 
-เว็บไซต์หน้าเดียวของร้าน LV99coffee สร้างด้วย HTML, CSS และ Vanilla JavaScript
+เว็บไซต์ทางการของ LV99coffee สำหรับ `https://coffee.lv99th.com/` สร้างด้วย HTML, CSS และ Vanilla JavaScript โดยไม่ต้องใช้ระบบ build
 
-## วิธีเปิดเว็บไซต์
+## โครงสร้าง
 
-เปิดไฟล์ `index.html` ด้วยเว็บเบราว์เซอร์ได้โดยตรง
+- `index.html` — เนื้อหา, SEO และ Structured Data
+- `css/styles.css` — Design system และ Responsive layout
+- `js/main.js` — ข้อมูลเมนูจริง, ตัวกรองหมวด, Mobile navigation และ reveal animation
+- `assets/images/` — ภาพเว็บไซต์และป้ายเมนูจริงที่บีบอัดเป็น WebP
+- `robots.txt` / `sitemap.xml` — ข้อมูลสำหรับ Search Engine
 
-## ไฟล์สำคัญ
+## การเผยแพร่
 
-- `index.html` — เว็บไซต์ทั้งหมด
-- `HANDOFF.md` — รายละเอียดและข้อกำหนดสำหรับผู้พัฒนาคนถัดไป
-- `assets/` — รูปภาพและไฟล์ประกอบ
+อัปโหลดไฟล์ทั้งหมดเข้า `/domains/coffee.lv99th.com/public_html/` บน RUK-COM DirectAdmin โดยรักษาโครงสร้างโฟลเดอร์เดิม
 
 ## ข้อกำหนดสำคัญ
 
-- ยังไม่ต้องเพิ่มข้อมูลจากป้ายเมนูด้านขวา
 - ห้ามเดาชื่อเมนูหรือราคา
-- รักษา Responsive, SEO และรูปแบบเว็บไซต์เดิม
-- เมนูเครื่องดื่มจัดเก็บใน JavaScript Array ชื่อ `lv99Menu`
-
-โปรดอ่าน `HANDOFF.md` ก่อนแก้ไขโปรเจกต์
+- เรื่องราวร้านและมาตรฐานวัตถุดิบที่ยืนยันแล้วอยู่ในส่วน `#story` และ `.standards` ของ `index.html`
+- เมนูและราคาที่อ่านได้ชัดถูกถอดจากป้ายจริงแล้ว โดยไม่ใช้ส่วนขวาของภาพที่ถูกตัด
+- ภาพปัจจุบันเป็นภาพบรรยากาศที่สร้างขึ้นสำหรับงานออกแบบ และควรเปลี่ยนเป็นภาพร้านจริงเมื่อพร้อม
+- Production URL คือ `https://coffee.lv99th.com/`
