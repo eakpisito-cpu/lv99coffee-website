@@ -8,7 +8,7 @@ Modern editorial single-page website on branch `redesign-v1`. Production target:
 
 - Founded: 2023, in the former shipping shop operated by the owner's wife
 - Name origin: LV99 means “Level 99”, the highest/end-game level and a commitment to doing each detail well
-- Coffee: 23 g ground coffee per extraction; Pacamara Coffee Roasters beans
+- Coffee: full-flavored extraction using Pacamara Coffee Roasters beans; the exact recipe and dose are confidential
 - Ice: made on-site using the shop's ice machine and filtered water; filters are replaced regularly
 - Brand principle: the owner and family drink at the shop regularly, so customer drinks follow the same standard
 - Address: ปากซอยเจริญกรุง 9 ถนนเจริญกรุง แขวงบ้านบาตร เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร 10100
