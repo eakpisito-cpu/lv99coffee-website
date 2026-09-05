@@ -16,6 +16,10 @@ Modern editorial single-page website on branch `redesign-v1`. Production target:
 - Hours: Monday–Saturday 07:30–16:30; closed Sunday
 - Maps: `https://maps.app.goo.gl/upwLs7Lys3qoL3d98`
 - Facebook: `https://www.facebook.com/lv99coffee`
+- LINE: `@480xoyrj` (`https://line.me/R/ti/p/@480xoyrj`)
+- Phone: `088-639-4666`
+- Grab delivery: `https://r.grab.com/g/6-20260905_121633_26bfd17a1ec94d88992dd4b845d9ee0a_MEXMPS-3-C35JVJKAL63HGJ`
+- LINE MAN delivery: `https://lin.ee/ONmKM3F?openExternalBrowser=1`
 
 ## Design direction
 
@@ -24,6 +28,8 @@ Modern editorial single-page website on branch `redesign-v1`. Production target:
 - DM Serif Display with Noto Sans Thai
 - Image-led full-screen hero and responsive mobile layout
 - Reduced-motion support, keyboard focus styles and semantic navigation
+- Animated story timeline and illustrative MRT Sam Yot route use CSS only and honor `prefers-reduced-motion`
+- Real menu boards open in a native HTML `<dialog>` with keyboard and backdrop-close support
 
 ## Content constraints
 

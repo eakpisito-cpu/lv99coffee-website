@@ -72,6 +72,25 @@
 .services-grid .arrow-link { position: relative; display: inline-flex; gap: 2rem; margin-top: 1rem; font-size: .82rem; }
 .services-note { margin: 1.25rem 0 0; color: #766b62; font-size: .72rem; }
 
+.delivery { background: #2a1b14; color: #fff; }
+.delivery-heading { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(280px,.7fr); gap: 1rem 8vw; align-items: end; }
+.delivery-heading .eyebrow { grid-column: 1 / -1; color: #e5a06f; }
+.delivery-heading h2 { margin: 0; font: 400 clamp(3rem,6vw,6rem)/.95 var(--serif); letter-spacing: -.04em; }
+.delivery-heading h2 span { display: block; color: #e5a06f; }
+.delivery-heading > p:last-child { margin: 0; color: #c9beb6; max-width: 520px; }
+.delivery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 4rem; }
+.delivery-card { min-height: 230px; padding: clamp(1.5rem,3vw,2.8rem); display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid rgba(255,255,255,.2); transition: transform .25s ease,background .25s ease,color .25s ease; }
+.delivery-card:hover { transform: translateY(-4px); }
+.delivery-card:focus-visible { outline-color: #fff; }
+.delivery-brand { margin-bottom: auto; font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.delivery-card strong { font: 400 clamp(2rem,4vw,4rem)/1 var(--serif); }
+.delivery-card small { margin-top: .8rem; font-size: .78rem; letter-spacing: .04em; }
+.delivery-grab { background: #00b14f; color: #071d10; }
+.delivery-lineman { background: #fff; color: #17130f; }
+.delivery-note { margin: 1.25rem 0 0; color: #a99f96; font-size: .72rem; }
+.contact-links { display: flex; flex-wrap: wrap; gap: .65rem 1.5rem; }
+.contact-links a { border-bottom: 1px solid rgba(23,19,15,.45); }
+
 .menu-board-open {
   position: relative;
   display: block;
@@ -135,6 +154,8 @@
   .route { grid-template-columns: 1fr; }
   .services-heading { grid-template-columns: 1fr; }
   .services-heading > p:last-child { margin-top: 1rem; }
+  .delivery-heading { grid-template-columns: 1fr; }
+  .delivery-heading > p:last-child { margin-top: 1rem; }
 }
 
 @media (max-width: 600px) {
@@ -149,6 +170,8 @@
   .services-grid { grid-template-columns: 1fr; }
   .services-grid article,.services-grid article:first-child,.services-grid article:last-child { padding: 2rem 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .services-grid article:last-child { border-bottom: 0; }
+  .delivery-grid { grid-template-columns: 1fr; margin-top: 2.5rem; }
+  .delivery-card { min-height: 190px; }
   .service-number { right: 0; }
 }
 
