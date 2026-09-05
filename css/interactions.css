@@ -79,14 +79,15 @@
 .delivery-heading h2 span { display: block; color: #e5a06f; }
 .delivery-heading > p:last-child { margin: 0; color: #c9beb6; max-width: 520px; }
 .delivery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 4rem; }
-.delivery-card { min-height: 230px; padding: clamp(1.5rem,3vw,2.8rem); display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid rgba(255,255,255,.2); transition: transform .25s ease,background .25s ease,color .25s ease; }
-.delivery-card:hover { transform: translateY(-4px); }
+.delivery-card { min-height: 260px; padding: clamp(1.5rem,3vw,2.8rem); display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid rgba(255,255,255,.2); background: #f8f3ea; color: var(--ink); transition: transform .25s ease,background .25s ease,border-color .25s ease; }
+.delivery-card:hover { transform: translateY(-4px); background: #fff; border-color: #00b14f; }
 .delivery-card:focus-visible { outline-color: #fff; }
-.delivery-brand { margin-bottom: auto; font-size: .75rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
-.delivery-card strong { font: 400 clamp(2rem,4vw,4rem)/1 var(--serif); }
-.delivery-card small { margin-top: .8rem; font-size: .78rem; letter-spacing: .04em; }
-.delivery-grab { background: #00b14f; color: #071d10; }
-.delivery-lineman { background: #fff; color: #17130f; }
+.delivery-logo { min-height: 76px; margin-bottom: auto; display: flex; align-items: flex-start; }
+.delivery-logo img { width: auto; height: 54px; object-fit: contain; object-position: left top; }
+.delivery-lineman .delivery-logo img { height: 48px; }
+.delivery-card strong { font: 400 clamp(2rem,3.6vw,3.5rem)/1 var(--serif); }
+.delivery-card small { display: flex; justify-content: space-between; gap: 1rem; margin-top: .9rem; padding-top: .9rem; border-top: 1px solid rgba(23,19,15,.16); font-size: .78rem; letter-spacing: .04em; }
+.delivery-grab,.delivery-lineman { border-top: 4px solid #00b14f; }
 .delivery-note { margin: 1.25rem 0 0; color: #a99f96; font-size: .72rem; }
 .contact-links { display: flex; flex-wrap: wrap; gap: .65rem 1.5rem; }
 .contact-links a { border-bottom: 1px solid rgba(23,19,15,.45); }
