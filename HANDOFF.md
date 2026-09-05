@@ -29,7 +29,6 @@ Modern editorial single-page website on branch `redesign-v1`. Production target:
 - Image-led full-screen hero and responsive mobile layout
 - Reduced-motion support, keyboard focus styles and semantic navigation
 - Animated story timeline and illustrative MRT Sam Yot route use CSS only and honor `prefers-reduced-motion`
-- Real menu boards open in a native HTML `<dialog>` with keyboard and backdrop-close support
 
 ## Content constraints
 
